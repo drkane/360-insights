@@ -80,6 +80,18 @@
       text-transform: uppercase;
       margin: 0 0 16px 0;
     }
+    
+    li {
+      font-size: 1.25em;
+      font-weight: 300;
+      line-height: 28px;
+    }
+
+    ul {
+      list-style: circle;
+      margin-left: 25px;
+      margin-bottom: 24px;
+    }
 
     p {
       font-size: 1.25em;
@@ -98,6 +110,15 @@
 
       &.headless {
         padding-top: calc(1.4em + 16px);
+      }
+    
+      a {
+        color: #9c1f61;
+        
+        &:hover {
+          color: lighten(#9c1f61, 5);
+          text-decoration: underline;
+        }
       }
     }
   }
@@ -127,6 +148,11 @@
       line-height: 24px;
       padding: 12px 18px 8px 18px;
       cursor: pointer;
+        
+      &:hover {
+        color: lighten(#ffffff, 5);
+        text-decoration: underline;
+      }
 
       @include breakpoint($large) {
         width: auto;
